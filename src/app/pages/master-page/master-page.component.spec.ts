@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ComponentbComponent } from './componentb.component';
+import { MasterPageComponent } from './master-page.component';
 
-describe('ComponentbComponent', () => {
-  let component: ComponentbComponent;
-  let fixture: ComponentFixture<ComponentbComponent>;
+describe('MasterPageComponent', () => {
+  let component: MasterPageComponent;
+  let fixture: ComponentFixture<MasterPageComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ComponentbComponent ]
+      declarations: [ MasterPageComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ComponentbComponent);
+    fixture = TestBed.createComponent(MasterPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -5,12 +5,9 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () =>
-      import('./modules/modulea/modulea.module').then((m) => m.ModuleaModule),
-  },
-  {
-    path: 'moduleb',
-    loadChildren: () =>
-      import('./modules/moduleb/moduleb.module').then((m) => m.ModulebModule),
+      import('./pages/master-page/master-page.module').then(
+        (m) => m.MasterPageModule
+      ),
   },
 ];
 

@@ -1,0 +1,41 @@
+:host {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 200px auto;
+  grid-template-rows: 50px auto 50px;
+  grid-template-areas:
+    "app-header-widget app-header-widget"
+    "app-navigation-widget main"
+    "app-footer-widget app-footer-widget";
+
+  app-header-widget {
+    grid-area: app-header-widget;
+    height: 50px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+
+  app-navigation-widget {
+    grid-area: app-navigation-widget;
+    background-color: blue;
+    color: #fff;
+  }
+
+  main {
+    grid-area: main;
+    padding: 20px;
+  }
+
+  app-footer-widget {
+    grid-area: app-footer-widget;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 50px;
+    background-color: #333;
+    color: #fff;
+  }
+}
