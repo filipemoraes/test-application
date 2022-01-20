@@ -1,0 +1,29 @@
+:host {
+  height: 100%;
+  display: grid;
+  grid-template-columns: auto 200px;
+  grid-template-rows: 40px auto;
+  grid-template-areas:
+    "app-quick-actions-widget app-quick-actions-widget"
+    "main app-cards-navigation-widget";
+
+  app-quick-actions-widget {
+    grid-area: app-quick-actions-widget;
+    background-color: green;
+    color: #fff;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+
+  app-cards-navigation-widget {
+    grid-area: app-cards-navigation-widget;
+    background-color: red;
+    color: #fff;
+  }
+
+  main {
+    grid-area: main;
+    padding: 20px;
+  }
+}

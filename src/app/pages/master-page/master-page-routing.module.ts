@@ -8,6 +8,10 @@ const routes: Routes = [
     component: MasterPageComponent,
     children: [
       {
+        path: '',
+        redirectTo: 'cards',
+      },
+      {
         path: 'cards',
         loadChildren: () =>
           import('../../modules/card-module/card-module.module').then(
